@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CMU 15-441 - Lab 1"
-date:   2022-03-22 20:35:49 +0800
+date:   2022-03-24 20:35:49 +0800
 categories: database
 tags: ["database"]
 ---
