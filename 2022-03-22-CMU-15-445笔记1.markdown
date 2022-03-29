@@ -38,3 +38,5 @@ LRU如何在O(1)完成更新，获取，这个是有例子的(链表+哈希表)�
 总的来说，Lab 1还是非常简单易上手的。花费的大部分时间都是在阅读接口，思考关系。参考资料：一些LRU的实现方法。这一个Lab 一般来说不需要观看课程。最后，贴一个个人认为本Lab最难发现的一个Bug, 仅在Scope能测出来：`UnpinPgImp`中只有`is_dirty_`为真时设置页面为脏，如果`is_dirty_`为假，页面Dirty Bit不能被false覆盖！此外，Grade scope的脚本也有小Bug，他会要求`unpin`之后的`is_dirty_`和给定的保持一致。但是没有考虑`unpin`之后为0马上flush的场景。
 
 <img src="https://s2.loli.net/2022/03/14/mKhLPR7gvAHCEQa.png" alt="image-20220314094007439" style="zoom:67%;" />
+
+最后似乎只有Non CMU的70名左右…
